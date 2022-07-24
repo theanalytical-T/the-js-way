@@ -311,57 +311,57 @@
 //Improved hello
 // Complete the following program so that it asks the user for his first and last names, then show the result of the sayHello() function.
 
-let firstName = prompt("What's your first name?")
-let lastName = prompt("What's your last name?")
+// let firstName = prompt("What's your first name?")
+// let lastName = prompt("What's your last name?")
 
-function sayHello(f, l) {
-    f = firstName
-    l = lastName
-    alert(`Hi there ${f} ${l}!`)
-}
+// function sayHello(f, l) {
+//     f = firstName
+//     l = lastName
+//     alert(`Hi there ${f} ${l}!`)
+// }
 
-sayHello()
+// sayHello()
 
-// Say hello to the user
-let f = prompt("What's your first name?")
-let l = prompt("What's your last name?")
+// // Say hello to the user
+// let f = prompt("What's your first name?")
+// let l = prompt("What's your last name?")
 
-function sayHello(firstName, lastName) {
-    const message = `Hello, ${firstName} ${lastName}!`;
-    return message;
-}
+// function sayHello(firstName, lastName) {
+//     const message = `Hello, ${firstName} ${lastName}!`;
+//     return message;
+// }
 
 // TODO: ask user for first and last name
 // TODO: call sayHello() and show its result
 
-alert(sayHello(f, l))
+// alert(sayHello(f, l))
 
 
 // Number squaring
 // Complete the following program so that the square1() and square2() functions work properly.
 
 // Square the given number x
-function square1(x) {
-    return x * x
-}
+// function square1(x) {
+//     return x * x
+// }
 // TODO: complete the function code
 
 // Square the given number x
-const square2 = x => x * x
-// TODO: complete the function code
+// const square2 = x => x * x
+// // TODO: complete the function code
 
-console.log(square1(0)); // Must show 0
-console.log(square1(2)); // Must show 4
-console.log(square1(5)); // Must show 25
+// console.log(square1(0)); // Must show 0
+// console.log(square1(2)); // Must show 4
+// console.log(square1(5)); // Must show 25
 
-console.log(square2(0)); // Must show 0
-console.log(square2(2)); // Must show 4
-console.log(square2(5)); // Must show 25
+// console.log(square2(0)); // Must show 0
+// console.log(square2(2)); // Must show 4
+// console.log(square2(5)); // Must show 25
 // When it's done, update the program so that it shows the square of every number between 0 and 10.
-for (let i = 0; i <= 10; i++) {
-    console.log(square1(i))
-    console.log(square2(i))
-}
+// for (let i = 0; i <= 10; i++) {
+//     console.log(square1(i))
+//     console.log(square2(i))
+// }
 
 // Writing 10 dumb calls to square() is forbidden! You know how to repeat statements, don't you? ;)
 
@@ -369,40 +369,40 @@ for (let i = 0; i <= 10; i++) {
 // Let's pretend the JavaScript Math.min() function doesn't exist. Complete the following program so that the min() function returns the minimum of its two received numbers.
 
 // TODO: write the min() function
-function min(r2, d2) {
-    if (r2 < d2) {
-        return r2
-    } else {
-        return d2
-    }
-}
+// function min(r2, d2) {
+//     if (r2 < d2) {
+//         return r2
+//     } else {
+//         return d2
+//     }
+// }
 
-console.log(min(4.5, 5)); // Must show 4.5
-console.log(min(19, 9));  // Must show 9
-console.log(min(1, 1));   // Must show 1
+// console.log(min(4.5, 5)); // Must show 4.5
+// console.log(min(19, 9));  // Must show 9
+// console.log(min(1, 1));   // Must show 1
 
 // Calculator
 // Complete the following program so that it offers the four basic arithmetical operations: addition, subtraction, multiplication and division. You can use either a function declaration or a function expression.
 
 // TODO: complete program
-function calculate(quantum, s, physics) {
-    if (s === "+") {
-        return quantum + physics
-    } else if (s === "-") {
-        return quantum - physics
-    } else if (s === "*") {
-        return quantum * physics
-    } else if (s === "/") {
-        return quantum / physics
-    } else {
-        console.log("I can't calculate that!")
-    }
-}
+// function calculate(quantum, s, physics) {
+//     if (s === "+") {
+//         return quantum + physics
+//     } else if (s === "-") {
+//         return quantum - physics
+//     } else if (s === "*") {
+//         return quantum * physics
+//     } else if (s === "/") {
+//         return quantum / physics
+//     } else {
+//         console.log("I can't calculate that!")
+//     }
+// }
 
-console.log(calculate(4, "+", 6));  // Must show 10
-console.log(calculate(4, "-", 6));  // Must show -2
-console.log(calculate(2, "*", 0));  // Must show 0
-console.log(calculate(12, "/", 0)); // Must show Infinity
+// console.log(calculate(4, "+", 6));  // Must show 10
+// console.log(calculate(4, "-", 6));  // Must show -2
+// console.log(calculate(2, "*", 0));  // Must show 0
+// console.log(calculate(12, "/", 0)); // Must show Infinity
 
 // Circumference and area of a circle
 // Write a program containing two functions to calculate the circumference and area of a circle defined by its radius. Test it using user input.
@@ -414,15 +414,57 @@ console.log(calculate(12, "/", 0)); // Must show Infinity
 // You might want to use the exponentiation operator ** to perform computations.
 // console.log(2 ** 3); // 8: 2 * 2 * 2
 // console.log(3 ** 2); // 9: 3 * 3
-let theRadius = Number(prompt('Please provide the radius'))
+// let theRadius = Number(prompt('Please provide the radius'))
 
-function circumferenceOfACircle(radius) {
-    return 2 * Math.PI * radius;
+// function circumferenceOfACircle(radius) {
+//     return 2 * Math.PI * radius;
+// }
+
+// function areaOfACircle(radius) {
+//     return Math.PI * (radius ** 2)
+// }
+
+// console.log(circumferenceOfACircle(theRadius))
+// console.log(areaOfACircle(theRadius))
+
+//Finding the bmi of a person
+function bmi(weight, height) {
+    let result = Number(weight / (height ** 2))
+
+    switch (true) {
+        case (result <= 18.5):
+            return console.log('Underweight')
+            break;
+        case (result <= 25.0):
+            return console.log('Normal')
+            break;
+        case (result <= 30.0):
+            return console.log('Overweight')
+            break;
+        case (result > 30):
+            return console.log('Obese')
+            break;
+        default:
+            return console.log('Not applicable, please try again.')
+    }
 }
 
-function areaOfACircle(radius) {
-    return Math.PI * (radius ** 2)
-}
+//Alternate solution
+// if (bmi <= 18.5) {
+//     return 'Underweight'
+// } else if (bmi <= 25.0) {
+//     return 'Normal'
+// } else if (bmi <= 30.0) {
+//     return 'Overweight'
+// } else if (bmi > 30) {
+//     return 'Obese'
+// } else {
+//     return 'Not applicable, please try again.'
+// }
 
-console.log(circumferenceOfACircle(theRadius))
-console.log(areaOfACircle(theRadius))
+bmi(80, 1.80)
+
+
+
+
+
